@@ -4,6 +4,8 @@ updates:
     directory: "/common"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
     groups:
       dependencies:
         applies-to: version-updates
@@ -13,6 +15,8 @@ updates:
     directory: "/factory"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
     groups:
       dependencies:
         applies-to: version-updates
@@ -22,6 +26,8 @@ updates:
     directory: "/service"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
     groups:
       dependencies:
         applies-to: version-updates
@@ -31,6 +37,8 @@ updates:
     directory: "/value"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
     groups:
       dependencies:
         applies-to: version-updates
@@ -40,6 +48,8 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    cooldown:
+      default-days: 7
     groups:
       github-actions:
         applies-to: version-updates
